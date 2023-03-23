@@ -1,0 +1,18 @@
+<div class="form__builder">
+    <h3 class="mb-3">Select Input</h3>
+    <p>Customize your form by drag selected input and drop in builder section</p>
+
+    <div class="form__builder--list">
+        <div class="form__builder--list--item d-flex align-items-center justify-content-between w-100" draggable>
+            <div class="d-flex">
+                <div class="img">
+                    <img src="../../../assets/img/type.svg" class="me-2" alt="">
+                </div>
+                <span>Text</span>
+            </div>
+            <div class="btn p-0" (drag)="dragInput($event)">
+                <img src="../../../assets/img/move.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

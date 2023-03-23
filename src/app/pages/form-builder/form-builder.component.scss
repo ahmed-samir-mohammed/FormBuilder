@@ -1,0 +1,31 @@
+%setStyle {
+    background: #190d30;
+    color: #fff;
+    padding: 1rem;
+}
+
+#grid {
+    display: grid;
+    width: 100vw;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: calc(100vh - 2rem);
+    grid-template-columns: calc(20vw - 1rem) calc(50vw - 1rem) calc(30vw - 2rem);
+    grid-template-areas: 'List Create Preview';
+
+    .list {
+        grid-area: List;
+        @extend %setStyle;
+    }
+
+    .create {
+        grid-area: Create;
+        @extend %setStyle;
+    }
+
+    .preview {
+        grid-area: Preview;
+        @extend %setStyle;
+    }
+
+}
